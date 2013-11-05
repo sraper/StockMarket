@@ -61,4 +61,15 @@ public class Stock {
 		}
 		return new Stock(name, price, copyHistory);
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		Stock s = (Stock) o;
+		return s.name.equals(this.name);
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.name.hashCode();	
+	}
 }

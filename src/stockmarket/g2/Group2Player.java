@@ -34,25 +34,10 @@ public class Group2Player extends stockmarket.sim.Player {
 		for (Stock stock : stocks){
 			System.out.println(stock);
 		}
+		
+		
 	}
 
-	/*
-	@Override
-	public ArrayList<Trade> placeTrade(int currentRound,
-			ArrayList<EconomicIndicator> indicators, ArrayList<Stock> stocks, Portfolio portfolioCopy) {
-		System.out.println("\nRound " + currentRound + "\n" + portfolioCopy);
-		Stock stockToTrade = stocks.get(Math.abs(random.nextInt()%10));
-		int tradeAmount = Math.abs(random.nextInt()%100);
-		int type = Trade.BUY;
-		if(Math.abs(random.nextInt() %2) > 0){
-			type = Trade.SELL;
-		}
-		ArrayList<Trade> trades = new ArrayList<Trade>();
-		trades.add(new Trade(type, stockToTrade, tradeAmount));
-		System.out.println(trades.get(0));
-		return trades;
-	}
-	*/
 	@Override
 	public ArrayList<Trade> placeTrade(int currentRound,
 			ArrayList<EconomicIndicator> indicators, ArrayList<Stock> stocks, Portfolio portfolioCopy) {
