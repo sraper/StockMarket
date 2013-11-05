@@ -44,7 +44,7 @@ public class MarketShakingPlayer extends stockmarket.sim.Player {
 				}
 			}
 			
-			int numToBuy = (int) ((int) portfolioCopy.getCapital() / minValueStock.currentPrice());
+			int numToBuy = (int) (((int) portfolioCopy.getCapital() - 5) / minValueStock.currentPrice());
 			trades.add(new Trade(Trade.BUY, minValueStock, numToBuy));
 			buyRound = !buyRound;
 		} else {
